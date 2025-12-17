@@ -56,7 +56,7 @@ def main():
         layout="wide"
     )
 
-    st.title("📚 Interface d'analyse de corpus")
+    st.title(" Interface d'analyse de corpus")
     st.markdown(
         "Application unique couvrant **TD6, TD7 et TD8** : "
         "recherche textuelle, concordancier, statistiques et moteur TF-IDF."
@@ -79,15 +79,15 @@ def main():
     )
 
     st.sidebar.markdown("---")
-    st.sidebar.write(f"📌 Corpus : **{corpus.nom}**")
-    st.sidebar.write(f"📄 Documents : **{corpus.ndoc}**")
-    st.sidebar.write(f"🧑‍💻 Auteurs : **{corpus.naut}**")
+    st.sidebar.write(f" orpus : **{corpus.nom}**")
+    st.sidebar.write(f"Documents : **{corpus.ndoc}**")
+    st.sidebar.write(f" Auteurs : **{corpus.naut}**")
 
     # ============================
     # Vue 1 : Aperçu du corpus
     # ============================
     if vue == "Aperçu du corpus":
-        st.subheader("📄 Aperçu du corpus")
+        st.subheader(" Aperçu du corpus")
 
         docs_data = []
         for doc_id, doc in corpus.id2doc.items():
@@ -104,7 +104,7 @@ def main():
 
         st.dataframe(pd.DataFrame(docs_data), use_container_width=True)
 
-        st.markdown("### 🧑‍💻 Auteurs")
+        st.markdown("###  Auteurs")
         auteurs_data = [
             {
                 "auteur": name,
@@ -149,7 +149,7 @@ def main():
     # Vue 4 : Stats TF / DF
     # ============================
     elif vue == "Statistiques lexicales (TF/DF)":
-        st.subheader("📊 Statistiques lexicales (TF / DF)")
+        st.subheader(" Statistiques lexicales (TF / DF)")
 
         n = st.slider("Top mots :", 5, 50, 20)
         freq_df = get_top_stats(corpus, n=n)
@@ -163,7 +163,7 @@ def main():
     # Vue 5 : Recherche TF-IDF (TD7 / TD8)
     # ============================
     elif vue == "Recherche TF-IDF (TD7/TD8)":
-        st.subheader("🧠 Recherche avancée TF-IDF (TD7)")
+        st.subheader(" Recherche avancée TF-IDF (TD7)")
 
         engine = build_search_engine(corpus)
 
