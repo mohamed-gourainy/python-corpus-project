@@ -1,0 +1,4 @@
+id	titre	auteur	date	url	texte	type	nb_comments	coauthors
+0	Climate change is real	RedditUser123	2023	https://reddit.com/fake1	This is a discussion about climate change on Reddit. Climate change is a serious issue.	reddit	42	
+1	Deep Learning for Climate Models	Dr. Smith	2024	https://arxiv.org/fake2	This paper explores deep learning models applied to climate data. We show that neural networks can help predict climate patterns.	arxiv	0	Dr. Johnson;Dr. Lee
+2	Random blog post	Anonymous	2022	http://example.com/random	Just a random text about environment, weather, and daily life. Nothing very scientific.	generic	0	
