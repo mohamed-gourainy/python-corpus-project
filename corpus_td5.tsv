@@ -1,0 +1,4 @@
+id	titre	auteur	date	url	texte	type	nb_comments	coauthors
+0	Climate change is real	RedditUser123	2023	https://reddit.com/fake1	Discussion about climate change on Reddit...	reddit	42	
+1	Deep Learning for Climate Models	Dr. Smith	2024	https://arxiv.org/fake2	This paper explores deep learning techniques applied to climate models...	arxiv	0	Dr. Johnson;Dr. Lee
+2	Random blog post	Anonymous	2022	http://example.com	Just a generic text without specific source type...	generic	0	
